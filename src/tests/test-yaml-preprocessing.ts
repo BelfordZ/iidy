@@ -216,13 +216,13 @@ aref: !$ nested.aref`, mockLoader)).to.deep.equal({aref: 'mock'});
         .to.equal("a: '008'\n");
 
       expect(yaml.dump(await transform({$defs: {a: '008'}, a: 'a{{a}}a'})))
-        .to.equal("a: a008a\n");
+        .to.equal("a: 'a008a'\n");
 
       expect(yaml.dump(await transform({$defs: {a: '008'}, a: '{{a}}a'})))
-        .to.equal("a: 008a\n");
+        .to.equal("a: '008a'\n");
 
       expect(yaml.dump(await transform({$defs: {a: '008'}, a: 'a{{a}}'})))
-        .to.equal("a: a008\n");
+        .to.equal("a: 'a008'\n");
 
     });
 

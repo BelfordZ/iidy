@@ -30,7 +30,7 @@
     "handlebars": "^4.0.12",
     "inquirer": "^6.2.0",
     "jmespath": "0.15.0",
-    "js-yaml": "^3.12.0",
+    "js-yaml": "jpb/js-yaml#e3d91f89cdcaca7f8b49b941d37b6ab1ef5a7ec4",
     "lodash": "^4.17.11",
     "ntp-client": "^0.5.3",
     "ora": "^3.0.0",

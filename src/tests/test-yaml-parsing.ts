@@ -34,7 +34,7 @@ describe("Yaml parsing", () => {
   });
 
   it("can roundtrip basic yaml docs (non-custom)", () => {
-    const input = 'a: b\n';
+    const input = "a: 'b'\n";
     expect(yaml.dump(yaml.loadString(input, 'root'))).to.deep.equal(input);
   })
 
